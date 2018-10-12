@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- Theme Made By www.w3schools.com - No Copyright -->
-  <title>MOWMBA</title>
+  <title>Mowmba</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -16,57 +17,328 @@
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage">MOWMBA</a>
+        <a class="navbar-brand" href="#myPage">Mowmba</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#about">ABOUT US</a></li>
+          <li><a href="#models">MODELS</a></li>
+          <li><a href="#portfolio">PORTFOLIO</a></li>
+          <li><a href="#pricing">PURCHASE</a></li>
+          <li><a href="#services">SERVICES</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about">ABOUT US</a></li>
-        <li><a href="#services">SERVICES</a></li>
-        <li><a href="#portfolio">PRODUCTS</a></li>
-        <li><a href="#pricing">PORTFOLIO</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+  </nav>
 
-<div class="jumbotron text-center">
-  <h1>MOWMBA</h1> 
-  <p>Perfect lawn while you are gone!</p> 
-  <form>
- <!--   <div class="input-group">
+  <div class="jumbotron text-center">
+    <h1>Mowmba</h1>
+    <p>Precision mowing everytime from the comfort of your home.</p>
+    <form>
+      <!--   <div class="input-group">
       <input type="email" class="form-control" size="50" placeholder="Email Address" required>
       <div class="input-group-btn">
         <button type="button" class="btn btn-danger">Subscribe</button>
       </div>
     </div> -->
-  </form>
-</div>
+    </form>
+  </div>
 
-<!-- Container (About Section) -->
-<div id="about" class="container-fluid">
-  <div class="row">
-    <div class="col-sm-8">
-      <h2>OUR MISSION</h2><br>
-      <h4>I am amazing and I make cool stuff. Buy my stuff and you too will be cool. ~Chester</h4><br>
-      <p>Our most recent amazing product is a self driving lawn mower.  Now with amazon delivery and our lawn mower, you can get closer to your goal of never setting a foot outside ever again!</p>
+  <!-- Container (About Section) -->
+  <div id="about" class="container-fluid test-center bg-grey">
+    <div class="row">
+      <div class="col-sm-8 text-center">
+        <h3>We understand the demands of life, and mowing the perfect lawn should not be one of them. You deserve the luxury that comes from our automotive lawn mower.</h3>
+        <!--<h2 class = "text-center"></h2><br>
+      <h4 class = "text-center">Mission: Mow the world! Yes, Oceans too!</h4><br>
+      <p class = "text-center">Our most recent amazing product is a self driving lawn mower.  Now with amazon delivery and our lawn mower, you can get closer to your goal of never setting a foot outside ever again!</p>
       <!--<br><button class="btn btn-default btn-lg">Get in Touch</button>-->
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon"> <img src = "https://hgtvhome.sndimg.com/content/dam/images/hgtv/fullset/2018/5/25/0/shutterstock_366536351_romakoma_lawn-striping.jpg.rend.hgtvcom.616.411.suffix/1527262732537.jpeg"</span>
+      </div>
+      <div class="col-sm-4 text-center">
+        <span class="glyphicon glyphicon-globe logo slideanim"></span>
+        <span class="glyphicon glyphicon"></span>
+      </div>
     </div>
   </div>
-</div>
 
-<!--<div class="container-fluid bg-grey">-->
+  <!-- Container (Basic Product) -->
+  <div id="models" class="container-fluid text-center">
+    <h1>OUR PRODUCTS</h1><br>
+    <div class="row">
+      <div class="col-sm-8 text-center">
+        <h2 class="text-center">Basic Model</h2><br>
+        <h4 class="text-center">Basic Mowmba comes with pre-programmed setup making it ready to go right out of the box! Once it maps the yard, you can either use one of its customizable lawn patterns or design your own pattern with our available programming features from any of your mobile devices.</h4><br>
+        <p class="text-center"></p>
+      </div>
+      <div class="col-sm-4 text-center">
+        <img src="https://s3-us-west-2.amazonaws.com/castle-rock-gym/mower.jpg">
+        <span class="glyphicon glyphicon"></span>
+      </div>
+    </div>
+
+    <!--    Container (Tabs) -->
+    <div>
+      <button class="tablinks" onclick="openCity(event, 'London')">Tech Specs</button>
+      <button class="tablinks" onclick="openCity(event, 'Paris')">Configurations</button>
+      <button class="tablinks" onclick="openCity(event, 'Tokyo')">Ratings and reviews</button>
+    </div>
+    <div id="London" class="tabcontent">
+      <h3>Tech Specs</h3>
+      <ul style="list-style: none;">
+        <li>5 KW motor</li>
+        <li>8 KWH battery</li>
+        <li>17 inch high carbon steel cutting blade</li>
+        <li>phenom l-71 chip with dual hyperthread capabilities</li>
+        <li>p40 3D lidar scanner</li>
+        <li>Cache up to 4Ghz with turbo boost technology </li>
+        <li>1x SPDIF Digital Output (TOSLINK)</li>
+        <li>1x RJ-45 Killer Networks e2500 Gigabit Ethernet Port</li>
+        <li>1x SuperSpeed 10Gbps USB 3.1 Type-A</li>
+        <li>1x Hi-Speed USB 2.0 Type-A</li>
+        <li>45 db at full power</li>
+      </ul>
+    </div>
+
+    <div id="Paris" class="tabcontent">
+      <h3>Configurations</h3>
+      <ul style="list-style: none;">
+        <li>17 unique colors</li>
+        <li>9 inch diamater front wheels</li>
+        <li>12 inch diameter rear wheels</li>
+        <li>Upgrade to 6 KW motor</li>
+        <li>Upgrade to 10 KWH battery</li>
+        <li>Rough terrain package</li>
+        <li>Advanced LIDAR package</li>
+        <li>Works with all solar panel packages</li>
+      </ul>
+    </div>
+
+    <div id="Tokyo" class="tabcontent">
+      <h3>Ratings and reviews</h3>
+      <p>“Mowmba makes my lawn really stand out with the custom mowing patterns I design!” - Justin Timberlake</p>
+      <p>“Mowmba is so easy to use, I can mow my lawn all from my desktop at work!” -Hillary Clinton</p>
+    </div><br>
+
+
+
+    <!-- Container (Pro Product) -->
+    <div class="container-fluid text-center">
+      <div class="row">
+        <div class="col-sm-8 text-center">
+          <h2 class="text-center">PRO Model</h2><br>
+          <h4 class="text-center">Our Pro model comes with all basic features plus additional features such as precision edging and aeration capability. On top of that, you receive personal visit from our representative to adjust these additional features for you and much more!
+            </h4><br>
+          <p class="text-center"></p>
+        </div>
+        <div class="col-sm-4 text-center">
+          <img src="https://s3-us-west-2.amazonaws.com/castle-rock-gym/388396-lawntractors-ryobi-r48110.jpg" width="500">
+          <span class="glyphicon glyphicon"></span>
+        </div>
+      </div>
+
+      <!--    Container (Tabs) -->
+      <div>
+        <button class="tablinks" onclick="openCity(event, 'London3')">Tech Specs</button>
+        <button class="tablinks" onclick="openCity(event, 'Paris3')">Configurations</button>
+        <button class="tablinks" onclick="openCity(event, 'Tokyo3')">Ratings and reviews</button>
+      </div>
+      <div id="London3" class="tabcontent">
+        <h3>Tech Specs</h3>
+        <ul style="list-style: none;">
+          <li>10 KW motor</li>
+          <li>12 KWH battery</li>
+          <li>24 inch high carbon steel cutting blade</li>
+          <li>phenom l-71 chip with dual hyperthread capabilities</li>
+          <li>p45 3D lidar scanner - up to 1000 scans per second</li>
+          <li>Cache up to 4Ghz with turbo boost technology </li>
+          <li>2x SPDIF Digital Output (TOSLINK)</li>
+          <li>1x RJ-45 Killer Networks e3500 Gigabit Ethernet Port</li>
+          <li>1x SuperSpeed 100Gbps USB 3.1 Type-A</li>
+          <li>1x Hi-Speed USB 3.0 Type-A</li>
+          <li>45 db at full power</li>
+        </ul>
+      </div>
+
+      <div id="Paris3" class="tabcontent">
+        <h3>Configurations</h3>
+        <ul style="list-style: none;">
+          <li>All the colors of the basic model, plus 5 unique pro colors</li>
+          <li>Solar panel ready</li>
+          <li>Off road tires</li>
+          <li>Upgrade to 30 inch high carbon steel self sharpening cutting blade</li>
+          <li>Rough terrain package</li>
+          <li>Advanced LIDAR package</li>
+          <li>Tech package with remote alert system</li>
+          <li>Advanced rain package</li>
+          <li>Early warning pet system</li>
+          <li>Full smart home integration</li>
+        </ul>
+      </div>
+
+      <div id="Tokyo3" class="tabcontent">
+        <h3>Ratings and reviews</h3>
+        <p>“Not only do I have a perfect patterned lawn, but also perfect edging! The Mowmba Pro is worth the upgrade.”- Tiger Woods</p>
+        <p>“My grass has never looked healthier with the simultaneous aeration feature of the Pro… and I have never felt more relaxed!” - Oprah Winfrey</p>
+      </div><br>
+
+      <!-- Container (Premium Product) -->
+      <div class="container-fluid text-center">
+        <div class="row">
+          <div class="col-sm-8 text-center">
+            <h2 class="text-center">PREMIUM MODEL</h2><br>
+            <h4 class="text-center">The Premium Model, with all the amazing features of our Pro model, is equipped with military-grade technology that allows for better precision edging, weekly bug killer application, and automatic seasonal fertilization with fragrance of your
+              choice!</h4><br>
+            <p class="text-center"></p>
+          </div>
+          <div class="col-sm-4 text-center">
+            <img src="https://s3-us-west-2.amazonaws.com/castle-rock-gym/RTractor.jpg" width="500">
+            <span class="glyphicon glyphicon"></span>
+          </div>
+        </div>
+
+        <!--    Container (Tabs) -->
+        <div>
+          <button class="tablinks" onclick="openCity(event, 'London2')">Tech Specs</button>
+          <button class="tablinks" onclick="openCity(event, 'Paris2')">Configurations</button>
+          <button class="tablinks" onclick="openCity(event, 'Tokyo2')">Ratings and reviews</button>
+        </div>
+        <div id="London2" class="tabcontent">
+          <h3>Tech Specs</h3>
+          <ul style="list-style: none;">
+            <li>12 KW motor</li>
+            <li>15 KWH battery</li>
+            <li>24 inch high carbon steel cutting blade</li>
+            <li>Pro-Xenon chip with quad hyperthread capabilities</li>
+            <li>p45 3D lidar scanner - up to 1000 scans per second</li>
+            <li>Cache up to 4Ghz with turbo boost technology </li>
+            <li>2x SPDIF Digital Output (TOSLINK)</li>
+            <li>1x RJ-45 Killer Networks e3500 Gigabit Ethernet Port</li>
+            <li>1x SuperSpeed 100Gbps USB 3.1 Type-A</li>
+            <li>1x Hi-Speed USB 3.0 Type-A</li>
+            <li>45 db at full power</li>
+          </ul>
+        </div>
+
+        <div id="Paris2" class="tabcontent">
+          <h3>Configurations</h3>
+          <ul style="list-style: none;">
+            <li>All the colors of the basic model, plus 5 unique pro colors</li>
+            <li>Solar panel ready</li>
+            <li>Off road tires</li>
+            <li>Upgrade to 30 inch high carbon steel self sharpening cutting blade</li>
+            <li>Rough terrain package</li>
+            <li>Advanced LIDAR package</li>
+            <li>Tech package with remote alert system</li>
+            <li>Advanced rain package</li>
+            <li>Early warning pet system</li>
+            <li>Full smart home integration</li>
+          </ul>
+        </div>
+
+        <div id="Tokyo2" class="tabcontent">
+          <h3>Ratings and reviews</h3>
+          <p>“If you are like me, you demand the best from everything in life. That is what the Premium Mowmba gives you with the finest edging and lines on the market!” - Lebron James</p>
+          <p>“I have won best lawn 2 years in a row with the premium model! The fertilizer feature makes my lawn unbelievably lush!” - Beyoncé</p>
+        </div><br>
+
+
+        <h1 id="portfolio" class="bg-grey">Past Projects</h1>
+        <div class="row text-center slideanim">
+          <div class="col-sm-4">
+            <div class="thumbnail">
+              <img src="https://s3-us-west-2.amazonaws.com/castle-rock-gym/Basic+Model+Picture.png" alt="Paris" width="400" height="300">
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="thumbnail">
+              <img src="https://s3-us-west-2.amazonaws.com/castle-rock-gym/Pro+Model+Picture.png" alt="New York" width="400" height="300">
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="thumbnail">
+              <img src="https://s3-us-west-2.amazonaws.com/castle-rock-gym/Premium+Model+Picture.jpg" alt="San Francisco" width="400" height="300">
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Container (Pricing Section) -->
+        <div id="pricing" class="container-fluid bg-grey">
+          <div class="text-center">
+            <h2>Purchase</h2>
+            <!--<h4>Choose a payment plan that works for you</h4>-->
+          </div>
+          <div class="row slideanim">
+            <div class="col-sm-4 col-xs-12">
+              <div class="panel panel-default text-center">
+                <div class="panel-heading">
+                  <h1>Basic</h1>
+                  <p>Basic features</p>
+                </div>
+                <div class="panel-body">
+                  <p>Beautiful lawn maintenance at the click of a button</p>
+                  <p><strong></strong>Aerial view lawn mapping software from your desktop</p>
+                  <p><strong></strong> Customizable mowing intervals and patterns</p>
+                  <p><strong></strong>Spatial recognition technology, never run into a tree again</p>
+                </div>
+                <div class="panel-footer">
+                  <h3>$1100</h3>
+                  <!--<h4>Buy it now!</h4>-->
+                  <button class="btn btn-lg" onclick="location.href='buy.html'">BUY</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+              <div class="panel panel-default text-center">
+                <div class="panel-heading">
+                  <h1>Pro</h1>
+                  <p>All the feature of basic plus...</p>
+                </div>
+                <div class="panel-body">
+                  <p><strong></strong>Personal on-site lawn mapping by a MOWMBA professional</p>
+                  <p><strong></strong>Professional grade edging, your lawn edges have never looked this good</p>
+                  <p><strong></strong>Automate mowing time by length</p>
+                  <p><strong></strong>Simultaneous lawn-cutting and aeration for a healthy, green lawn</p>
+                </div>
+                <div class="panel-footer">
+                  <h3>$1335</h3>
+                  <!--<h4>BUY</h4>-->
+                  <button class="btn btn-lg" onclick="location.href='buy.html'">BUY</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 col-xs-12">
+              <div class="panel panel-default text-center">
+                <div class="panel-heading">
+                  <h1>Premium</h1>
+                  <p>All the features of pro plus...</p>
+                </div>
+                <div class="panel-body">
+                  <p><strong></strong>Military grade satellite technology for the finest edging and lines</p>
+                  <p><strong></strong>Simultaneous edging, aeration, and lawn-cutting for a perfect lawn</p>
+                  <p><strong></strong>Weekly fertilizer and bug killer application</p>
+                  <p><strong></strong>Cup holder</p>
+                </div>
+                <div class="panel-footer">
+                  <h3>$1700</h3>
+                  <!--<h4></h4>-->
+                  <button class="btn btn-lg" onclick="location.href='buy.html'">BUY</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--<div class="container-fluid bg-grey">
   <div class="row">
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-globe logo slideanim"></span>
@@ -77,273 +349,214 @@
       <p><strong>VISION:</strong> Our vision is to make sure you never have to sweat again.  We all know that sweat is really your body crying.  We dont want anyone to leak water through their skin.</p>
     </div>
   </div>
-</div>
+</div>-->
 
-<!-- Container (Services Section) -->
-<div id="services" class="container-fluid text-center bg-grey">
-  <h2>SERVICES</h2>
-  <h4>What we offer</h4>
-  <br>
-  <div class="row slideanim">
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-off logo-small"></span>
-      <h4>POWER</h4>
-      <p>Most hp on the market</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-heart logo-small"></span>
-      <h4>LOVE</h4>
-      <p>Spend more time with your family</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-lock logo-small"></span>
-      <h4>JOB DONE</h4>
-      <p>Get the job done right the first time</p>
-    </div>
-  </div>
-  <br><br>
-  <div class="row slideanim">
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-leaf logo-small"></span>
-      <h4>GREEN</h4>
-      <p>Eco friendly products</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-certificate logo-small"></span>
-      <h4>CERTIFIED</h4>
-      <p>lifetime warranty</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-wrench logo-small"></span>
-      <h4 style="color:#303030;">HARD WORK</h4>
-      <p>Contineous innovation</p>
-    </div>
-  </div>
-</div>
+        <!-- Container (Services Section) -->
+        <div id="services" class="container-fluid text-center">
+          <h2>SERVICES</h2>
+          <!--<h4>What we offer</h4>-->
+          <br>
+          <div class="row slideanim">
+            <div class="col-sm-4">
+              <span class="glyphicon glyphicon-phone logo-small"></span>
+              <h4>SMART TECHNOLOGY</h4>
+              <p>Mowmba installation consists of mapping your yard to make sure every bit of your yard remains well-cut and clean.</p>
+            </div>
+            <div class="col-sm-4">
+              <span class="glyphicon glyphicon-menu-hamburger logo-small"></span>
+              <h4>PRE-SET PATTERNS</h4>
+              <p>Use one of our pre-programmed patterns to get a great looking lawn right out of the box.</p>
+            </div>
+            <div class="col-sm-4">
+              <span class="glyphicon glyphicon-grain logo-small"></span>
+              <h4>FRAGRANCED FERTILIZER</h4>
+              <p>Mowmba leaves your lawn not only well cut and clean, but also fertilized with a fragrance of your choice! Now make your lawn smell according to your personal taste and season. </p>
+            </div>
+          </div>
+          <br><br>
+          <div class="row slideanim">
+            <div class="col-sm-4">
+              <span class="glyphicon glyphicon-certificate logo-small"></span>
+              <h4>LIFETIME WARRANTY</h4>
+              <p>Covers all manufacture defects in materials and workmanship for the lifetime of the product</p>
+            </div>
+            <div class="col-sm-4">
+              <span class="glyphicon glyphicon-earphone logo-small"></span>
+              <h4>PERSONAL ASSISTANCE 24/7</h4>
+              <p>You can call us anytime for support! Our great call center representative are more than happy to answer any questions you have.</p>
+            </div>
+            <div class="col-sm-4">
+              <span class="glyphicon glyphicon-home logo-small"></span>
+              <h4>GURANTEED SAFETY</h4>
+              <p>APA Certified as Safe-Home Product</p>
+            </div>
+          </div>
+        </div>
 
-<!-- Container (Portfolio Section) -->
-<div id="portfolio" class="container-fluid text-center bg-grey">
-  <h2>Portfolio</h2><br>
-  <h4>What we have created</h4>
-  <div class="row text-center slideanim">
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="https://photos.mandarinoriental.com/is/image/MandarinOriental/paris-2017-home?wid=2880&hei=1280&fmt=jpeg&crop=9,336,2699,1200&anchor=1358,936&qlt=75,0&fit=wrap&op_sharpen=0&resMode=sharp2&op_usm=0,0,0,0&iccEmbed=0&printRes=72" alt="Paris" width="400" height="300">
-        <p><strong>Paris</strong></p>
-        <p>Yes, we built Paris</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="data:image/jpeg;base64,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" alt="New York" width="400" height="300">
-        <p><strong>New York</strong></p>
-        <p>We built New York</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="https://lonelyplanetimages.imgix.net/a/g/hi/t/9cf024dfd5c0bcb2b17f4785340145ea-san-francisco.jpg?sharp=10&vib=20&w=1200" alt="San Francisco" width="400" height="300">
-        <p><strong>San Francisco</strong></p>
-        <p>Yes, San Fran is ours</p>
-      </div>
-    </div>
-  </div><br>
-  
-  <h2>What our customers say</h2>
-  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
 
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <h4>"This company is the best. I am so happy with the result! They are so much better than that other company that sells those terrible mowers at Homedepot"<br><span>Michael Roe, Vice President, Comment Box</span></h4>
-      </div>
-      <div class="item">
-        <h4>"One word... WOW!! which is really three words if you count the words "One Word and WOW"<br><span>John Doe, Salesman, Rep Inc</span></h4>
-      </div>
-      <div class="item">
-        <h4>"Could I... BE any more happy with this company? Yes, Yes I could."<br><span>Chandler Bing, Actor, FriendsAlot</span></h4>
-      </div>
-      <div class="item">
-        <h4>"I purchased the premium model and I am so happy this company has a premium model and not just a basic and a plus."<br><span>Kim Kardashian ~ person</span></h4>
-      </div>
-    </div>
+        <!--  Container (Review Section)  -->
+        <h2>What our customers say</h2>
+        <div id="myCarousel" class="carousel slide text-center bg-grey" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+          </ol>
 
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <h4>"All the time I used to put into mowing the lawn now goes towards bigger and better things! I have never been so productive... or had such a perfect lawn!” <br><span> ~ Bill Gates</span></h4>
+            </div>
+            <div class="item">
+              <h4>"After a busy day at the office I deserve to come home and relax, not worry about my lawn! I am so happy Mowmba gives me this luxury without compromising my pristine and unique lawn!"<br><span> ~ Randall Pierson</span></h4>
+            </div>
+            <div class="item">
+              <h4>"I have never gotten so many compliments on my lawn before, and the fragrance fertilizer is the perfect addition to all of my outdoor parties!"<br><span> ~ Kim Kardashian</span></h4>
+            </div>
+            <div class="item">
+              <h4>"With Mowmba I get that perfect lawn pattern every single time, without even lifting a finger! Mowmba is truly one of the finer things of life!"<br><span> ~ Angelina Jolie</span></h4>
+            </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
       <span class="sr-only">Previous</span>
     </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
-  </div>
-</div>
-
-<!-- Container (Pricing Section) -->
-<div id="pricing" class="container-fluid">
-  <div class="text-center">
-    <h2>Pricing</h2>
-    <h4>Choose a payment plan that works for you</h4>
-  </div>
-  <div class="row slideanim">
-    <div class="col-sm-4 col-xs-12">
-      <div class="panel panel-default text-center">
-        <div class="panel-heading">
-          <h1>Basic</h1>
-        </div>
-        <div class="panel-body">
-          <p>Satelite mapping</p>
-          <p><strong></strong> preprogrammed layouts</p>
-          <p><strong></strong> make your own custom layouts</p>
-          <p><strong></strong> </p>
-          <p><strong>Endless</strong> Amet</p></ul>
-        </div>
-        <div class="panel-footer">
-          <h3>$1000</h3>
-          <h4>Buy it now!</h4>
-          <button class="btn btn-lg">Buy</button>
-        </div>
-      </div>      
-    </div>     
-    <div class="col-sm-4 col-xs-12">
-      <div class="panel panel-default text-center">
-        <div class="panel-heading">
-          <h1>Pro</h1>
-        </div>
-        <div class="panel-body">
-          <p><strong>*</strong> almost as good as the premium</p>
-          <p><strong>*</strong>fertalize</p>
-          <p><strong>*</strong>areation</p>
-          <p><strong>*</strong>aroma therapy</p>
-          <p><strong>*</strong>better than the basic</p>
-        </div>
-        <div class="panel-footer">
-          <h3>$29</h3>
-          <h4>per month</h4>
-          <button class="btn btn-lg">Sign Up</button>
-        </div>
-      </div>      
-    </div>       
-    <div class="col-sm-4 col-xs-12">
-      <div class="panel panel-default text-center">
-        <div class="panel-heading">
-          <h1>Premium</h1>
-        </div>
-        <div class="panel-body">
-          <p><strong>100</strong> All the features as pro plus</p>
-          <p><strong>50</strong>Picks up all dog poop </p>
-          <p><strong>25</strong>Like having your own slave</p>
-          <p><strong>10</strong> I love this product</p>
-          <p><strong>Endless</strong> Flys over and cleans everything up</p>
-        </div>
-        <div class="panel-footer">
-          <h3>$49</h3>
-          <h4>per month</h4>
-          <button class="btn btn-lg">Sign Up</button>
-        </div>
-      </div>      
-    </div>    
-  </div>
-</div>
-
-<!-- Container (Contact Section) -->
-<div id="contact" class="container-fluid bg-grey">
-  <h2 class="text-center">CONTACT</h2>
-  <div class="row">
-    <div class="col-sm-5">
-      <p>Contact us and we'll get back to you within 24 years.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
-      <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
-      <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
-    </div>
-    <div class="col-sm-7 slideanim">
-      <div class="row">
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
-        </div>
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
         </div>
       </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
-      <div class="row">
-        <div class="col-sm-12 form-group">
-          <button class="btn btn-default pull-right" type="submit">Send</button>
+
+    <div> 
+    <span>
+      <h1>Featured in</h1>
+    <img src = "http://www.hirestech.com/wp-content/uploads/2014/02/as-seen-in.png" >
+    </span>
+    </div>
+
+      <!-- Container (Contact Section) -->
+      <div id="contact" class="container-fluid bg-grey">
+        <h2 class="text-center">CONTACT</h2>
+        <div class="row">
+          <div class="col-sm-5">
+            <p>Contact us and we'll get back to you within 24 hours.</p>
+            <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
+            <p><span class="glyphicon glyphicon-phone"></span> +1 536-992-3457</p>
+            <p><span class="glyphicon glyphicon-envelope"></span> support@mowmba.com</p>
+          </div>
+          <div class="col-sm-7 slideanim">
+            <div class="row">
+              <div class="col-sm-6 form-group">
+                <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+              </div>
+              <div class="col-sm-6 form-group">
+                <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+              </div>
+            </div>
+            <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+            <div class="row">
+              <div class="col-sm-12 form-group">
+                <button class="btn btn-default pull-right" type="submit" onclick="mailFunction()">Send</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</div>
 
-<!-- Add Google Maps -->
-<div id="googleMap" style="height:400px;width:100%;"></div>
-<script>
-function myMap() {
-var myCenter = new google.maps.LatLng(41.878114, -87.629798);
-var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-var marker = new google.maps.Marker({position:myCenter});
-marker.setMap(map);
-}
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
-<!--
+      <!--   Container (footer) -->
+      <footer class="container-fluid text-center bg-green">
+        <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+        <p>Mowmba Inc.</p>
+        <!--<p>Follow us on Facebook </p><a href="mailto:Chesterd02@gmail.com">myFakeEmail@gmail.com</a></p>
+  <p>Dont worry I will never check or reply to your email</p>
+</footer>-->
+
+        <!-- Add Google Maps -->
+        <!--<div id="googleMap" style="height:400px;width:100%;"></div>-->
+        <script>
+          function myMap() {
+            var myCenter = new google.maps.LatLng(41.878114, -87.629798);
+            var mapProp = { center: myCenter, zoom: 12, scrollwheel: false, draggable: false, mapTypeId: google.maps.MapTypeId.ROADMAP };
+            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+            var marker = new google.maps.Marker({ position: myCenter });
+            marker.setMap(map);
+          }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+        <!--
 To use this code on your website, get a free API key from Google.
 Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 -->
+        <!-- Contact us Send button Javascript  -->
+        <script>
+          function mailFunction() {
+            alert("Thank you for contacting us.  A represntative will contact you within 24 hours.");
+          }
+        </script>
 
-<footer class="container-fluid text-center">
-  <a href="#myPage" title="To Top">
-    <span class="glyphicon glyphicon-chevron-up"></span>
-  </a>
-  <p>This amazing website was made by ME</p> 
-  <p>Try to contact me at </p><a href="mailto:Chesterd02@gmail.com">myFakeEmail@gmail.com</a></p>
-  <p>Dont worry I will never check or reply to your email</p>
-</footer>
+        <script>
+          $(document).ready(function() {
+            // Add smooth scrolling to all links in navbar + footer link
+            $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+              // Make sure this.hash has a value before overriding default behavior
+              if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
 
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
+                // Store hash
+                var hash = this.hash;
 
-      // Store hash
-      var hash = this.hash;
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                  scrollTop: $(hash).offset().top
+                }, 900, function() {
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 900, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-  
-  $(window).scroll(function() {
-    $(".slideanim").each(function(){
-      var pos = $(this).offset().top;
+                  // Add hash (#) to URL when done scrolling (default click behavior)
+                  window.location.hash = hash;
+                });
+              } // End if
+            });
 
-      var winTop = $(window).scrollTop();
-        if (pos < winTop + 600) {
-          $(this).addClass("slide");
-        }
-    });
-  });
-})
-</script>
+            $(window).scroll(function() {
+              $(".slideanim").each(function() {
+                var pos = $(this).offset().top;
+
+                var winTop = $(window).scrollTop();
+                if (pos < winTop + 600) {
+                  $(this).addClass("slide");
+                }
+              });
+            });
+          })
+        </script>
+
+
+        <script>
+          //   Tab scripts
+          function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+          }
+        </script>
 
 </body>
+
 </html>
